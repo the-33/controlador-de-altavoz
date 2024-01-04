@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Controlador de altavoz wifi</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="./index.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="controlador">
+			<img src="" class="portada" id="art"/>
+			<div class="titulos">
+				<h1 id="titulo">TITULO</h1>
+				<h2 id="autor">AUTOR</h2>
+			</div>
+			<div class="tiempo">
+				<div class="time" id="tiemporeproducido">00:00</div>
+				<div id="myProgress">
+				  <div id="myBar"></div>
+					<div id="bola"></div>
+				</div>
+				<div class="time" id="tiempototal">00:00</div>
+			</div>
+			<div class="controles">
+				<button id="shuffle" style="margin-right: 10%" onclick="sendShuffle()"><i class="fa fa-arrows-alt fa-fw"></i></button>
+				<button id="prev" onclick="sendPrev()"><i class="fa fa-step-backward fa-fw"></i></button>
+				<button id="onepause" onclick="sendOnePause()"><i class="fa fa-play fa-fw"></i></button>
+				<button id="next" onclick="sendNext()"><i class="fa fa-step-forward fa-fw"></i></button>
+				<button id="repeat" style="margin-left: 10%" onclick="sendRepeat()"><i class="fa fa-repeat fa-fw"></i></button>
+			<div>
+		</div>
+		<script src="./scr/functions.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/album-art"></script>
+		<script src="./scr/art.js"></script>
+	</body>
+</html>
