@@ -5,4 +5,4 @@ async function getImage(artista, cancion)
   })
 }
 
-getImage('camilo sexto', 'libre');
+getImage('extremo duro', 'bailare sobre tu tumba');
